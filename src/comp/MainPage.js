@@ -15,8 +15,8 @@ export default function MainPage() {
   return (
     <>
       <div className="gnb-wrap">
-        <NavStyle to="/">HOME</NavStyle>
-        <NavStyle to="/moviepage">영화검색</NavStyle>
+        <NavStyle to="/" exact={true}>HOME</NavStyle>
+        <NavStyle to="/moviepage" >영화검색</NavStyle>
       </div>
       <HashRouter/>
     </>

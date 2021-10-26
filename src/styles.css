@@ -158,8 +158,17 @@ ul li {
   background: #fff;
   width: 50%;
   margin: auto;
+  padding: 30px;
 }
-
+.detail_wrap .title01{
+  margin: 10px 0 20px;
+  font-size: 20px;
+}
+.detail_wrap .title02{
+  word-break: keep-all;
+  text-align: left;
+  line-height: 1.2;
+}
 /* 로딩 */
 /* Absolute Center Spinner */
 .loading {

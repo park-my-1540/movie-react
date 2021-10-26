@@ -10,13 +10,13 @@ export default function MovieDetail({location,history}) {
     <div className="img_box">
       <img src={cover_img} alt={title} />
     </div>
-    <p className="title">
+    <p className="title01">
       {title}
     </p>
-    <p className="title">
+    <p className="title02">
       {desc}
     </p>
-    <p className="desc">{rating}</p>
+    <p className="desc">rating : {rating}</p>
   </div>
   </>);
 }

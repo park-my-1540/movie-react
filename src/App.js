@@ -10,9 +10,9 @@ import MovieProvider from "./lib/Provider";
 export default function App() {
   return (
     <>
-    <MovieProvider>
-        <MainPage />
-    </MovieProvider>
+      <MovieProvider>
+      <MainPage />
+      </MovieProvider>
     </>
   );
 }

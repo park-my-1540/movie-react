@@ -17,7 +17,6 @@ export default function MainPage() {
       <div className="gnb-wrap">
         <NavStyle to="/">HOME</NavStyle>
         <NavStyle to="/moviepage">영화검색</NavStyle>
-        <NavStyle to="/aboutpage">내 소개</NavStyle>
       </div>
       <HashRouter/>
     </>

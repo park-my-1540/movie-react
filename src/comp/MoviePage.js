@@ -12,7 +12,8 @@ import MovieList from "./List";
  */
 const Wrapper = styled.div`
   position:relative;
-  margin: 0 50px;
+  overflow-x : hidden;
+  padding-top:50px;
   width:100%;
 `;
 export default function MoviePage({match}) {

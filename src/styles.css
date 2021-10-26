@@ -1,33 +1,89 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 body,html{
   background: #373b69;
+  width: 100%;
+  height: 100%;
 }
 * {
   margin: 0;
   padding: 0;
 }
+.tit{
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
 ul li {
   list-style: none;
+}
+.movie-list{
+  width: 100%;
+  padding: 0 50px;;
 }
 .movie-list ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  align-items: center;
+  align-items: flex-start;
 }
 .movie-list ul li{
-  margin-left:10px;
-  width: calc(20% - 10px);
+  margin: 0 0 50px 10px;
 }
 .movie-list .movie-item {
   position: relative;
+  width: 230px;
 }
 .movie-list .movie-item .rating {
   position: absolute;
-  bottom: 20px;
+  bottom: 50%;
+  margin-bottom: -20px;
   right: 10px;
   display: block;
   width: 40px;
@@ -49,11 +105,16 @@ ul li {
   height: auto;
 }
 .movie-list .txt-box {
+ position: relative;
  background: #13688c;
  color: #fff;
- padding:40px 10px 30px;
- margin-top:-20px;
+ padding:20px 10px 20px;
+ min-height: 20px;
  border-radius: 0 0 0.5rem 0.5rem;
+}
+.movie-list .txt-box .title{
+  display: inline-block;
+  width: 80%;
 }
 .searchBar {
   margin: 50px auto 20px;
@@ -74,9 +135,10 @@ ul li {
 }
 .gnb-wrap a {
   display: inline-block;
-  color: #000;
+  padding: 20px 10px;
+  color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  font-size: 25px;
 }
 .detail_wrap {
   position: relative;

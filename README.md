@@ -6,8 +6,8 @@ https://park-my-1540.github.io/movie-react
 
 ### 기능
 HOME : api불러와서 뿌려줌  <br/>
-영화검색 : 카테코리 탭 및 검색어로 검색 가능 <br/>
-상세페이지 : 영화 포스터 클릭시 해당 상세페이지로 이동
+영화검색 : 카테고리 탭 및 검색어로 조회하여 뿌려줌 <br/>
+상세페이지 : 영화 포스터 클릭 시 해당 상세페이지로 이동
 
 ## API
 API : https://yts-proxy.now.sh/list_movies.json <br/>
